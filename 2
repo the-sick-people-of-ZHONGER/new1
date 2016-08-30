@@ -1,0 +1,25 @@
+cltype claddend(cltyoe head,data nodedata)
+{
+  cltype node,htemp;
+  if((node=cltype())=null)
+  {
+    System.out.print("fall of strong\n");
+    return null;
+  }
+  else{
+    node.nodedata=nodedata;
+    node.nextnode=null;
+    if(head==null)
+    {
+      head=node;
+      return head;
+    }
+    htemp=temp;
+    while(htemp.nextnode!=null)
+    {
+      htemp=htemp.nextnode;
+    }
+    htemp.nextnode=node;
+    return head;
+  }
+}
