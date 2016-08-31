@@ -1,0 +1,16 @@
+cltype claddfirst(cltype head,data2 nodedata)
+{
+  cltype node;
+  if((node=newcltype())=null)
+  {
+    System.out.print("error by make strong\n");
+    return null;
+  }
+  else
+  {
+    node.nodedata=nodedata;
+    node.nextdata=head;
+    head=node;
+    return head;
+  }
+}
