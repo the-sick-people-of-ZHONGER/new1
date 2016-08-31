@@ -1,0 +1,21 @@
+cltype clinsertnode(cltype head,Srting findkey,data2 nodedata)
+{
+  cltype node,nodetemp;
+  if((node=new cltype())=null)
+  {
+    System.out.print("error by make strong\n");
+    return null;
+  }
+  node.nodedata=nodedata;
+  nodetemp=clfindnode(head,findkey);
+  if(nodetemp!=null)
+  {
+    node.nextnode=nodetemp.nextnode;
+    nodetemp.nextnode=node;
+  }
+  else
+  {
+    System.out.print("404 no found the node\n");
+  }
+  return head;
+}
