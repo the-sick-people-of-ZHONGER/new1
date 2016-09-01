@@ -1,0 +1,21 @@
+int cldeletenode(cltype head,Srting key)
+{
+  cltype node,htemp;
+  htemp=head;
+  node=head;
+  while(htemp!=null)
+  {
+    if(htemp.nodedata.key.compareto(key)==0)
+    {
+      node.nextnode=htemp.nextnode;
+      htemp=null;
+      return 1;
+    }
+    else
+    {
+      node=htemp;
+      htemp=htemp.nextnode;
+    }
+  }
+  return 0;
+}
