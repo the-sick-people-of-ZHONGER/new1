@@ -1,0 +1,12 @@
+int cllength(cltype head)
+{
+  cltype htemp;
+  int len=0;
+  htemp=head;
+  while(htemp!=null)
+  {
+    len++;
+    htemp=htemp.nextnode;
+  }
+  return len;
+}
