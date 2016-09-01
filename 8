@@ -1,0 +1,13 @@
+void clallnode(cltype head)
+{
+  cltype htemp;
+  data2 nodedata;
+  htemp=head;
+  System.out.printf("have %d node(s)\n",cllength(head));
+  while(htemp!=null)
+  {
+    nodedata=htemp.nodedata;
+    System.out.printf("node(%s,%s,%d)\n",nodedata.key,nodedata.name,nodedata.age);
+    htemp=htemp.nextnode;
+  }
+}
