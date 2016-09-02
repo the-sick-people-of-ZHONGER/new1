@@ -1,0 +1,57 @@
+pubic class p2_2
+{
+  public static void main(args[])
+  {
+    cltype node,head=null;
+    cltype cl=new cltype();
+    String key,fing key;
+    Scanner input=new Scanner(Stsyem.in);
+    
+    System.out.printf("test,enter the data\n");
+    do
+    {
+      data2 nodedata=new data2();
+      nodedata.key=input.next();
+      fi(nodedata.key.equals("0")
+      {
+        break;
+      }
+      else
+      {
+        nodedata.name=input.next();
+        nodedata.age=input.nextInt();
+        head=cl.claddend(head,nodedata);
+      }
+    }while(ture);
+    cl.clallnode(head);
+    
+    System.out.printf("show the node,enter keyword\n");
+    findkey=input.next();
+    System.out.print("enter data\n");
+    data2 nodedata=new data2();
+    nodedata.key=input.next();
+    nodedata.name=input.next();
+    nodedata.age=input.inputInt();
+    head=cl.clinsertnode(head,findkey,nodedata);
+    cl.clallnode(head);
+    
+    System.out.print("\n show delete node\n");
+    
+    key=input.next();
+    cl.cldetelenode(head,key);
+    cl.allnode(head);
+    
+    System.out.printf("show search\n");
+    key=input.next();
+    node=cl.clfindnode(head.key);
+    if(node!=null)
+    {
+      nodedata=node.nodedata;
+      System.out.printf("keyword%s =node(%s,%s,%d)\n",key,nodedata.key,nodedata.name,nodedata.age);
+    }
+    else
+    {
+      System.out.printf("404 no found the keyword %s");
+    }
+  }
+}
